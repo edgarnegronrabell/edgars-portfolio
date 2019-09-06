@@ -90,21 +90,16 @@ body {
 }                          
 /* HEADER STYLES */
 
- .header {
-    /* background: #cc3030; */
-}
-
 .header-name {
     font-size: 2rem;
     padding: 5vh 0;
-    margin-left: 5%;
 }
 
 .header-nav {
-    /* background: lightblue; */
     box-sizing: border-box;
-    padding: 2.5vh 0 0 0;
     height: 25vh;
+    margin-bottom: 25vh;
+    padding: 2.5vh 0 0 0;
     width: 100vw;
     
 }
@@ -114,7 +109,7 @@ body {
     font-family: "Roboto", Helvetica, sans-serif;
     height: 5vh;
     list-style: none;
-    margin: .6vh 0 0 0;
+    margin: 4.5vh 0 0 0;
     opacity:0.9;    
 }
 
@@ -126,13 +121,13 @@ body {
 }
 .header-nav a {
     background: #32cd32;
-    border-radius: 20px;
+    border-radius: 50px;
     box-sizing: border-box;
     color: #f5f5f5;
     font-size: 1em;
     font-weight: bold;
     margin: 2vh 0;
-    padding: .5rem;
+    padding: 3vw;
     text-align: center;
     text-decoration: none;
     text-transform: lowercase;
@@ -172,7 +167,9 @@ width: 100%;
 }
 
 .intro p {
+    line-height: 1.5rem;
     margin: 0 auto;
+    margin-bottom: 9vh;
     padding: 4.5vh 0;
     text-align: justify;
     width:80%;
@@ -186,6 +183,7 @@ h2 {
 
  ul.skill-list {
    margin: 0 auto;
+   padding: 0;
 
  }
 
@@ -208,23 +206,64 @@ h2 {
 color: #f5f5f5;
     font-family: "futura", sans-serif;
 
-} 
+}  */
+
+.frameBackground {
+  background: #FFF;
+}
+                             /* RESUME STYLES */
+.resume-title {
+  font-family: 'Helvetica Neue'
+}
+span.block {
+  display: block;
+}
+.resume-image-container {
+  display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.resume {
+  background: #1432ca;
+  margin: 0 auto;
+  height: auto;
+  width: 80vw;
+}
+
+.resume-skills {
+  list-style: none;
+}
 
                                     /* FOOTER STYLES */
 footer {
   height: 20px;
-  margin-top: 10vh;
+  margin: 20vh 0 10vh 0;
   width: 100vw;
 }
-.fa-linkedin {
-  color: #0073B0;
+
+
+
+.fab:before {
+  font-size: 2.5em;
+  padding: 1vw;
 }
 
-.fa-github {
-  color:#FFFFFF;
+
+.fa-linkedin:before {
+  color: rgb(2, 116, 177);
+  
 }
-.fa-twitter {
+
+.fa-github:before {
+  color:#FFFFFF;
+  
+}
+.fa-twitter:before {
     color: #1DA1F2;
+  
 }
 
 
@@ -235,18 +274,16 @@ footer {
 
 @media screen and (min-width: 600px) {
   .header-name {
-    clear: both;
     color: #fff;
-    float: left;
+    display: inline-block;
     font-size: 2rem;
     margin: 0 auto;
     padding: 5vh 0;
-    margin-left: 5%;
+    margin-left: 5vw;
 
 }
 .header-nav {
-  clear: both;
-  float: right;
+  display: inline-block;
   padding: 5.5vh 60px 0 0;
 }
 
@@ -272,9 +309,10 @@ footer {
 
 .skill-list > li {
   background-color: #32cd32;
-  border-radius: 50px;
+  border-radius: 99px;
   color: #f5f5f5;
   display: inline-block;
+  font-size: 1.5em;
   padding: 5vw;
   margin: 0 auto;
   margin-top: 2vh;
