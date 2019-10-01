@@ -14,7 +14,7 @@
 </head>
 <body>
 <header class="header">
-  <nav>
+  <nav class="nav-grid">
     <h1 class="header-name">Edgar Negrón's Portfolio</h1>
     <ul class="header-nav">
       <li><a href="../index.html">Home </a></li>
@@ -28,7 +28,13 @@
   <main>
     <h2 class="contact-info">Contact Me</h2>
     <form>
-        <a href="mailto:edgar.negron.rabell@gmail.com"> email: edgar.negron.rabell@gmail.com </a>
+        <label for="subject"></label>
+        <input type="text" id="subject" placeholder="Subject">
+        <label for="body"></label>
+        <textarea id="body" rows="10" cols="50">
+        </textarea>
+        <br>
+        <button href="mailto:edgar.negron.rabell@gmail.com"> email: edgar.negron.rabell@gmail.com </button>
     </form>
     
     <address>
