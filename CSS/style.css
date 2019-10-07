@@ -100,7 +100,7 @@ body {
     height: 25vh;
     margin-bottom: 25vh;
     padding: 2.5vh 0 0 0;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -141,7 +141,7 @@ a:focus {
 /* Hero image sizing*/
 .image-container > img {
   height: auto;
-  width: 100vw;
+  width: 100%;
 }
 
 .full-hero .hero-home img {
@@ -149,7 +149,7 @@ a:focus {
     margin-bottom: 10vh;
     padding: 0;
     height: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Content Style */
@@ -181,24 +181,25 @@ h2 {
     margin-bottom: 5vh;
  }
 
- ul.skill-list {
+ .skill-list {
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   grid-template-rows: auto auto;
    margin: 0 auto;
    padding: 0;
 
  }
-
-.skill-list > li {
-    background-color: #006700;
-    border-radius: 50px;
-    color: #f5f5f5;
-    display: block;
-    padding: 5vw;
-    margin: 0 auto;
-    margin-top: 2vh;
-    text-align: center;
-    list-style: none;
-    width: 20vw;
-    
+.skill-list > li {  
+  display: block;
+  padding: 5vw;
+  margin: 0 auto;
+  margin-top: 2vh;
+  text-align: center;
+  list-style: none;
+  width: 20%;  
+}
+.skill-list >.fas .fab {
+  color: #006700;
 }
                                 /* PROJECTS STYLES */
 .projects-grid {
@@ -252,7 +253,7 @@ span.block {
 footer {
   height: 20px;
   margin: 20vh 0 10vh 0;
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -289,14 +290,12 @@ footer {
  
 
                                /* Media Queries */
-
-
 @media screen and (min-width: 600px) {
   .nav-grid {
     display: grid;
-    grid-template-columns: 30vw 60vw;
+    grid-template-columns: 30vw 65vw;
     border-bottom: 1px solid #fff;
-    margin-bottom: 2vh;
+    margin-bottom: 10vh;
   }
   .header-name {
     color: #fff;
@@ -305,15 +304,13 @@ footer {
     margin: 0 auto;
     padding: 5vh 0;
     padding-left: 5vw;
-    
-
 }
 .header-nav {
   display: inline-block;
   height: 20vh;
   margin-bottom: 0;
   padding-top: 5vh;
-  text-align: center;
+  text-align: right;
 }
 
 .header-nav > li {
@@ -339,19 +336,26 @@ footer {
   width: 100vw;
 } 
 
-.skill-list > li {
-  background-color: #006700;
-  border-radius: 99px;
-  color: #f5f5f5;
-  display: inline-block;
-  font-size: 1.5em;
-  padding: 5vw;
+.skill-list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto;
   margin: 0 auto;
-  margin-top: 2vh;
-  text-align: center;
-  list-style: none;
-  width: 5vw;
-  
+  padding: 0;
+
+}
+.skill-list > li {  
+ color: #006700;
+ display: block;
+ padding: 5vw;
+ margin: 0 auto;
+ margin-top: 2vh;
+ text-align: center;
+ list-style: none;
+ width: 20%;  
+}
+.skill-list >.fas .fab {
+
 }
  /* PROJECTS STYLES */
 .underConstruction {
