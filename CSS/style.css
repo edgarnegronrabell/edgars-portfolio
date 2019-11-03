@@ -112,15 +112,14 @@ a:focus {
 /* Hero image sizing*/
 .image-container > img {
   height: auto;
-  width: 100%;
+  width:80%;
 }
 
 .full-hero .hero-home img {
-    background: #fff;
     margin-bottom: 10vh;
     padding: 0;
-    height: auto;
     width: 100%;
+    max-width: 800px;
 }
 
 /* Content Style */
@@ -151,6 +150,22 @@ h2 {
     padding: 1em 0;
     margin-bottom: 5vh;
  }
+ .fa-html5::before {
+  color: #f16529;
+}
+
+.fa-css3-alt::before {
+  color: #29A9DF;
+}
+.fa-js-square {
+  color: #f7e018;
+}
+.fa-git {
+  color: #F44C27;
+}
+.fa-node {
+  color: #68A063;
+}
 
  .skill-list {
    display: grid;
@@ -261,8 +276,10 @@ footer {
  
 
                                /* Media Queries */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .navbar {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     margin-bottom: 10vh;
   }
